@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <title>Survey</title>
+</head>
+
+<body>
+    <nav class="NAVL">
+        <a href="index.html">Home</a>
+        <a href="data.html">Data</a>
+    </nav>
+    <div class="CONTAINER">
+        <div class="SURVEYBOX">
+            <span class=SURVEYTITTLE>
+                <h1>Survey</h1>
+            </span>
+        </div>
+
+        <form action="/myaction.php" class="FORMBOX" name="myform" onsubmit="return validateForm()" method="post">
+            <div class="UD">
+                <div class="DETAILS SAMELINE FLNAME">
+                    <div class="FNAME">
+                        <span class="NDETAILS">First Name</span>
+                        <input type="text" name=firstname id=firstname class="INPUTEXT">
+                        <label for="error" class="error d-none" id="error">errror</label>
+                    </div>
+                    <div class="LNAME">
+                        <span class="NDETAILS">Last Name</span>
+                        <input type="text" name=lastname id=lastname class="INPUTEXT">
+                        <label for="error" class="error d-none" id="error">errror</label>
+                    </div>
+                </div>
+                <div class="DETAILS">
+                    <span class="EMAILID">Email</span>
+                    <input type="email" name=email id=email class="INPUTEXT">
+                    <label for="error" class="error d-none" id="error">errror</label>
+                </div>
+                <div class="DETAILS">
+                    <span class="GENTITTLE">Gender</span>
+                    <span class="GENCHOICE">
+                        <label for="male">
+                            <input type="radio" id=male name=gen>
+                            <span class="GENDER">Male</span>
+                        </label>
+                    </span>
+                    <span class="GENCHOICE">
+                        <label for="female">
+                            <input type="radio" id=female name=gen>
+                            <span class="GENDER">Female</span>
+                        </label>
+                    </span>
+                    <span class="GENCHOICE">
+                        <label for="prefernottosay">
+                            <input type="radio" id=prefernottosay name=gen>
+                            <span class="GENDER">prefer not to say</span>
+                        </label>
+                    </span>
+                    <label for="error" class="error d-none" id="error">errror</label>
+                </div>
+                <div class="DETAILS">
+                    <span class="EMPID">Employee Id</span>
+                    <input type="text" id=eid name=eid class="INPUTEXT">
+                    <label for="error" class="error d-none" id="error">errror</label>
+                </div>
+                <div class="DETAILS SAMELINE">
+                    <span class="LOCATIONTITTLE ">Ofiice Location</span>
+                    <div class="LOCATIONCHOICE CHOICE">
+                        <span class="LOCATIONCOUNTRY">
+                            <select name="countryloc" id="countryloc">
+                                <option value="" selected="selected">Select Country</option>
+                            </select>
+                        </span>
+                        <span class="LOCATIONSTATE">
+                            <select name="stateloc" id="stateloc">
+                                <option value="" selected="selected">Select State</option>
+                            </select>
+                        </span>
+                    </div>
+                    <label for="error" class="error d-none" id="error">errror</label>
+                </div>
+                <div class="DETAILS">
+                    <div class="REMARKSTITTLE">
+                        <span>Remarks</span>
+                    </div>
+
+                    <div class="REMARKSDETAILS">
+                        <textarea name="remarks" id="remarks"></textarea>
+                    </div>
+                    <label for="error" class="error d-none" id="error">errror</label>
+                </div>
+            </div>
+            <div class="BTNSCONTAINER SAMELINE">
+                <div class="BTNS">
+                    <span class="SUB">
+                        <input type="submit" value="Submit" class="SPACE">
+                    </span>
+                    <span class="CLR">
+                        <input type="reset" value="Reset" class="SPACE">
+                    </span>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
