@@ -3,3 +3,5 @@
 # if there are some files that are not present in source folder but are mentioned in excel those files will be mentioned as file not found in progress section of the app
 # progress box is scrolable
 # if u are lucky there will be save.txt in desktop
+# please restrart app everytime when u succesfully run a file.
+# success full run means file was access and it said file was not found
