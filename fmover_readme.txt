@@ -5,3 +5,4 @@
 # if u are lucky there will be save.txt in desktop
 # please restrart app everytime when u succesfully run a file.
 # success full run means file was access and it said file was not found
+# both exe have just one diffrence    console one  runs console in background  and onother one doesnt   it was good for debugging
