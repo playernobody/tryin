@@ -1,0 +1,70 @@
+=>ANGULAR LEARNING FLOW
+
+
+-> All files work and features
+-> How to install Bootstrap
+-> How to install material UI
+-> How to create module
+-> How to create components
+-> Data binding
+.	->One way binding
+.	.	->Component to view
+.	.	.	-Interpolation		-{{}}
+.	.	.	-Property binding	-[]
+.	.	.	-Class binding		-[ngClass]
+.	.	.	-Style binding		-[ngStyle]
+.	.	.	-Attribute binding	-[attr.<attr_name>]
+.	.	->View to component	
+.	.		-Event binding		-(click)="func()"
+.	->Two way binding
+.		-><input [(ngModel)]="Username">    -html file
+.		  Username='';<-Declare in ts file  -ts file
+-> Directive
+	-If,IfElse,For,Nested For,While
+-> Parent to child data transfer
+-> Child to parent Data transfer
+-> Pipes,Custom pipes
+-> Template driven forms+Validation
+-> Routing
+	->Configuring routes
+		-path
+		    -Static params
+		    -Dynamic params
+		-component
+		-redirectTo
+		-children
+		-outlet
+		-pathMatch
+		    -full
+		    -prefix 
+	->Base href
+	->Router link
+	     -static
+	     -dynamic
+	->Lazy loading
+	->Route guards
+		-canActivate()
+		-canActivateChild()
+		-canDeactivate()
+		-canLoad()
+-> Reactive forms+Validation
+	-formGroup
+	-formControl
+	-formBuilder
+	-formArray*
+	-Custom Validators
+	
+-> DB connectivity*
+
+-->Pending
+	DB connectivity
+	FormArray
+	Perform logic from TS file(Changing variable value+all other stuff)
+
+	
+	How can we send data from child component to another modules child component in both side 
+	Like:- UserList To ContactList
+	Users
+	   -UsersList
+	Contact
+	   -ContactList 
